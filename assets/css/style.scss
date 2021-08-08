@@ -1,0 +1,332 @@
+/* all font imported */
+@import "font";
+
+/* all utility Css imported here */
+@import "util";
+
+/* Main Css stated from here */
+nav.navbar {
+    padding: 5px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    #navbarNav {
+        .navbar-nav {
+            align-items: center;
+            .nav-item {
+                .nav-link {
+                    padding: 10px 20px;
+                    margin: 0px 10px;
+                    color: $grey;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                    font-size: 13px;
+
+                    &:hover {
+                        background: $brand-dark;
+                        color: $default;
+                    }
+                }
+                &#navbar-searchbar {
+                    position: relative;
+                    &:hover {
+                        .navbar-search-input {
+                            display: block;
+                        }
+                    }
+                    .navbar-search-input {
+                        width: 200px;
+                        padding: 10px;
+                        position: absolute;
+                        right: 0px;
+                        bottom: -110%;
+                        z-index: 100;
+                        display: none;
+                        background: white;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                        background: lighten($grey, 90);
+                        .input-group {
+                            border: none;
+                            input.form-control {
+                                border: 1px solid transparentize($grey, 0.9);
+                            }
+                            .input-group-text {
+                                background: none;
+                                cursor: pointer;
+                                &:active {
+                                    background: $brand-dark;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* headers css start from here */
+
+// #header{
+//     .header-column{
+//         .desc{
+//             order: 2;
+//         }
+//     }
+// }
+
+.title-and-desc {
+    margin-bottom: 70px;
+    .head-line-of-headers {
+        font-size: 85px;
+        font-weight: bold;
+        color: $brand-dark;
+        margin-bottom: 40px;
+
+        @media screen and(max-width:992px) {
+            font-size: 50px;
+        }
+        @media screen and (max-width: 425px) {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    .headline-under-text {
+        color: $grey;
+        font-size: 22px;
+        margin-bottom: 35px;
+        font-weight: 500;
+        width: 60%;
+        @media screen and(max-width:992px) {
+            font-size: 20px;
+            width: 75%;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    }
+    .get-started-button {
+        font-size: 18px;
+        padding: 20px;
+        @media screen and (max-width: 425px) {
+            font-size: 16px;
+            padding: 15px;
+        }
+    }
+}
+.trusted-partner {
+    .trusted-text {
+        font-size: 18px;
+    }
+    .company-logos {
+        width: 70% !important;
+        .col-6 {
+            padding: 0px;
+        }
+        @media screen and (max-width: 425px) {
+            width: 100% !important;
+            .col-6 {
+            }
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        font-size: 15px;
+    }
+}
+.girl-img {
+    margin-left: -186px;
+    img {
+        max-width: 130%;
+        margin-left: -100px;
+        margin-top: -80px;
+    }
+    @media screen and(max-width:992px) {
+        img {
+            margin-top: -249px;
+            margin-left: 0px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        margin-left: -91px;
+        img {
+            margin-left: -5px;
+        }
+    }
+}
+
+/* Why we section css here */
+#why-we {
+    margin-bottom: 70px;
+    margin-top: 60px;
+
+    .single-card-site {
+    }
+
+    .services-card-area {
+        .row {
+            align-items: stretch;
+
+            .card-wrapper {
+                margin-bottom: 20px;
+                .card {
+                    height: 100%;
+                    background: #fcfcfc;
+                    box-shadow: 0px 18px 58px 16px rgba(1, 131, 109, 0.103);
+                    border-radius: 8px;
+                    padding: 20px;
+
+                    .icon {
+                        width: 50px;
+                        border-radius: 50%;
+                        margin-bottom: 20px;
+                    }
+                    .headline {
+                        @extend .ff-serif;
+                        font-size: 22px;
+                        margin-bottom: 10px;
+                        font-weight: bold;
+                    }
+                    p.grey-text {
+                        font-size: 14px;
+                        color: transparentize($grey, 0.5);
+                    }
+                }
+                @media screen and (max-width: 500px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+#some-counts {
+    background: $brand-primary;
+    color: $default;
+    padding: 40px;
+    .title {
+        padding: 20px;
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+    }
+
+    .some-count-showing-number {
+        padding-top: 20px;
+
+        .single-count-card {
+            text-align: center;
+
+            &:first-child {
+                border-right: 1px solid lighten($grey, 40);
+            }
+            &:last-child {
+                border-left: 1px solid lighten($grey, 40);
+            }
+            @media screen and (max-width: 768px) {
+                margin-bottom: 20px;
+
+                &:first-child {
+                    border-right: none;
+                }
+                &:last-child {
+                    border-left: none;
+                }
+            }
+        }
+    }
+}
+
+#testomonials {
+    .testomonials-card {
+        text-align: center;
+        padding: 20px;
+
+        .description {
+            h4 {
+                font-size: 17px;
+            }
+
+            p {
+                font-size: 15px;
+                color: lighten($grey, 30);
+            }
+        }
+        .logo-and-name {
+            width: 50%;
+            margin: auto;
+            justify-content: center;
+
+            .name {
+                font-size: 15px;
+            }
+            .surename {
+                font-size: 12px;
+            }
+        }
+    }
+
+    @media screen and (max-width:992px) {
+        .testomonials-card{
+            .logo-and-name{
+                width: 70%;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .testomonials-card {
+            text-align: left;
+
+            .logo-and-name{
+                margin: initial;
+            }
+        }
+
+    }
+}
+
+/* complex question container  */
+#complex-question{
+    max-width: 1400px;
+    margin: auto;
+    padding:10px;
+    .complex-question-container{
+        max-width: 1200px;
+        padding:10px;
+        margin-left:auto;
+    }
+}
+
+
+/* Footer css start from here */
+#footer{
+    background:$brand-primary;
+    .row-container{
+        .leftsite{}
+        .rightsite{
+            h6,ul>li{
+                color:$default;
+            }
+        }
+    }
+
+    .copyright{
+        background:$brand-dark;
+
+
+        .icon-wrapper{
+
+            .icon{
+                background:transparentize(black, 0.8);
+                margin: 0 10px;
+                ;font-size:20px;
+            }
+        }
+    }
+}

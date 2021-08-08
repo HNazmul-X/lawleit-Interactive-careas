@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+
+$brand-primary: #1282A6;
+$brand-dark : #05546D;
+$grey:#4F4F4F;
+$default: #fff;
+$black: #000;
+
+*{
+    font-family: 'plus jakarta sans','sans-serif';
+    box-sizing: border-box;
+
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+input, .form-control{
+    border:none; 
+    &:active, &:focus{
+        box-shadow: none;
+    }
+}
+
+.brand-text{
+    color:$brand-primary;
+}
+.brand-text-dark{
+    color: $brand-dark;
+}
+.grey-text{
+    color:$grey;
+}
+
+.bg-brand{
+    background: $brand-primary;
+}
+.bg-brand-dark{
+    background:$brand-dark;
+}
+.bg-default{
+    background: $default;
+}
+.ff-serif{
+    font-family: 'Playfair Display', serif;
+} 
+

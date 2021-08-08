@@ -1,0 +1,412 @@
+/* all font imported */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: plus jakarta sans;
+  font-weight: 400;
+  src: url(../fonts/PlusJakartaSans-Regular.woff);
+}
+
+@font-face {
+  font-family: plus jakarta sans;
+  font-weight: 500;
+  src: url(../fonts/PlusJakartaSans-Medium.woff);
+}
+
+/* all utility Css imported here */
+* {
+  font-family: 'plus jakarta sans','sans-serif';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+input, .form-control {
+  border: none;
+}
+
+input:active, input:focus, .form-control:active, .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.brand-text {
+  color: #1282A6;
+}
+
+.brand-text-dark {
+  color: #05546D;
+}
+
+.grey-text {
+  color: #4F4F4F;
+}
+
+.bg-brand {
+  background: #1282A6;
+}
+
+.bg-brand-dark {
+  background: #05546D;
+}
+
+.bg-default {
+  background: #fff;
+}
+
+.ff-serif, #why-we .services-card-area .row .card-wrapper .card .headline {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Main Css stated from here */
+nav.navbar {
+  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+nav.navbar #navbarNav .navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav.navbar #navbarNav .navbar-nav .nav-item .nav-link {
+  padding: 10px 20px;
+  margin: 0px 10px;
+  color: #4F4F4F;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+nav.navbar #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  background: #05546D;
+  color: #fff;
+}
+
+nav.navbar #navbarNav .navbar-nav .nav-item#navbar-searchbar {
+  position: relative;
+}
+
+nav.navbar #navbarNav .navbar-nav .nav-item#navbar-searchbar:hover .navbar-search-input {
+  display: block;
+}
+
+nav.navbar #navbarNav .navbar-nav .nav-item#navbar-searchbar .navbar-search-input {
+  width: 200px;
+  padding: 10px;
+  position: absolute;
+  right: 0px;
+  bottom: -110%;
+  z-index: 100;
+  display: none;
+  background: white;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background: white;
+}
+
+nav.navbar #navbarNav .navbar-nav .nav-item#navbar-searchbar .navbar-search-input .input-group {
+  border: none;
+}
+
+nav.navbar #navbarNav .navbar-nav .nav-item#navbar-searchbar .navbar-search-input .input-group input.form-control {
+  border: 1px solid rgba(79, 79, 79, 0.1);
+}
+
+nav.navbar #navbarNav .navbar-nav .nav-item#navbar-searchbar .navbar-search-input .input-group .input-group-text {
+  background: none;
+  cursor: pointer;
+}
+
+nav.navbar #navbarNav .navbar-nav .nav-item#navbar-searchbar .navbar-search-input .input-group .input-group-text:active {
+  background: #05546D;
+  color: white;
+}
+
+/* headers css start from here */
+.title-and-desc {
+  margin-bottom: 70px;
+}
+
+.title-and-desc .head-line-of-headers {
+  font-size: 85px;
+  font-weight: bold;
+  color: #05546D;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .title-and-desc .head-line-of-headers {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .title-and-desc .head-line-of-headers {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.title-and-desc .headline-under-text {
+  color: #4F4F4F;
+  font-size: 22px;
+  margin-bottom: 35px;
+  font-weight: 500;
+  width: 60%;
+}
+
+@media screen and (max-width: 992px) {
+  .title-and-desc .headline-under-text {
+    font-size: 20px;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title-and-desc .headline-under-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+.title-and-desc .get-started-button {
+  font-size: 18px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 425px) {
+  .title-and-desc .get-started-button {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+.trusted-partner .trusted-text {
+  font-size: 18px;
+}
+
+.trusted-partner .company-logos {
+  width: 70% !important;
+}
+
+.trusted-partner .company-logos .col-6 {
+  padding: 0px;
+}
+
+@media screen and (max-width: 425px) {
+  .trusted-partner .company-logos {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .trusted-partner {
+    font-size: 15px;
+  }
+}
+
+.girl-img {
+  margin-left: -186px;
+}
+
+.girl-img img {
+  max-width: 130%;
+  margin-left: -100px;
+  margin-top: -80px;
+}
+
+@media screen and (max-width: 992px) {
+  .girl-img img {
+    margin-top: -249px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .girl-img {
+    margin-left: -91px;
+  }
+  .girl-img img {
+    margin-left: -5px;
+  }
+}
+
+/* Why we section css here */
+#why-we {
+  margin-bottom: 70px;
+  margin-top: 60px;
+}
+
+#why-we .services-card-area .row {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#why-we .services-card-area .row .card-wrapper {
+  margin-bottom: 20px;
+}
+
+#why-we .services-card-area .row .card-wrapper .card {
+  height: 100%;
+  background: #fcfcfc;
+  -webkit-box-shadow: 0px 18px 58px 16px rgba(1, 131, 109, 0.103);
+          box-shadow: 0px 18px 58px 16px rgba(1, 131, 109, 0.103);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#why-we .services-card-area .row .card-wrapper .card .icon {
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#why-we .services-card-area .row .card-wrapper .card .headline {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#why-we .services-card-area .row .card-wrapper .card p.grey-text {
+  font-size: 14px;
+  color: rgba(79, 79, 79, 0.5);
+}
+
+@media screen and (max-width: 500px) {
+  #why-we .services-card-area .row .card-wrapper {
+    width: 100%;
+  }
+}
+
+#some-counts {
+  background: #1282A6;
+  color: #fff;
+  padding: 40px;
+}
+
+#some-counts .title {
+  padding: 20px;
+}
+
+#some-counts .title h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#some-counts .some-count-showing-number {
+  padding-top: 20px;
+}
+
+#some-counts .some-count-showing-number .single-count-card {
+  text-align: center;
+}
+
+#some-counts .some-count-showing-number .single-count-card:first-child {
+  border-right: 1px solid #b5b5b5;
+}
+
+#some-counts .some-count-showing-number .single-count-card:last-child {
+  border-left: 1px solid #b5b5b5;
+}
+
+@media screen and (max-width: 768px) {
+  #some-counts .some-count-showing-number .single-count-card {
+    margin-bottom: 20px;
+  }
+  #some-counts .some-count-showing-number .single-count-card:first-child {
+    border-right: none;
+  }
+  #some-counts .some-count-showing-number .single-count-card:last-child {
+    border-left: none;
+  }
+}
+
+#testomonials .testomonials-card {
+  text-align: center;
+  padding: 20px;
+}
+
+#testomonials .testomonials-card .description h4 {
+  font-size: 17px;
+}
+
+#testomonials .testomonials-card .description p {
+  font-size: 15px;
+  color: #9c9c9c;
+}
+
+#testomonials .testomonials-card .logo-and-name {
+  width: 50%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#testomonials .testomonials-card .logo-and-name .name {
+  font-size: 15px;
+}
+
+#testomonials .testomonials-card .logo-and-name .surename {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 992px) {
+  #testomonials .testomonials-card .logo-and-name {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #testomonials .testomonials-card {
+    text-align: left;
+  }
+  #testomonials .testomonials-card .logo-and-name {
+    margin: initial;
+  }
+}
+
+/* complex question container  */
+#complex-question {
+  max-width: 1400px;
+  margin: auto;
+  padding: 10px;
+}
+
+#complex-question .complex-question-container {
+  max-width: 1200px;
+  padding: 10px;
+  margin-left: auto;
+}
+
+/* Footer css start from here */
+#footer {
+  background: #1282A6;
+}
+
+#footer .row-container .rightsite h6, #footer .row-container .rightsite ul > li {
+  color: #fff;
+}
+
+#footer .copyright {
+  background: #05546D;
+}
+
+#footer .copyright .icon-wrapper .icon {
+  background: rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+  font-size: 20px;
+}
+/*# sourceMappingURL=Style.css.map */
